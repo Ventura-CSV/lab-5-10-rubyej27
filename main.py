@@ -2,12 +2,12 @@ import random
 
 
 def foldandswap(numbers):
-    """
-    ########################################
-    Code Your Program here
-    ########################################
-    """
-
+    n = len(numbers)
+    mid = n // 2
+    for i in range(mid):
+        numbers[i], numbers[-(i + 1)] = numbers[-(i + 1)], numbers[i]
+    return numbers
+   
 
 def main():
     numbers = [2, 3, 0, 5, 4, 1, 6, 9, 8, 7]
